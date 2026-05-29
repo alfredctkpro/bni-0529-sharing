@@ -94,6 +94,13 @@
   }
   .phone img{ display:block; height:72vh; width:auto; max-width:36vw; object-fit:contain; background:#fff; border-radius:18px; }
 
+  /* QR Code 區塊（現場掃描體驗） */
+  .qr{ display:flex; align-items:center; gap:18px; margin-top:5vh; }
+  .qr img{ width:clamp(96px,11vw,148px); height:auto; border:1px solid var(--line); border-radius:10px; padding:6px; background:#fff; }
+  .qr .qr-text{ text-align:left; }
+  .qr .qr-title{ font-weight:700; font-size:clamp(16px,1.9vw,24px); }
+  .qr .qr-sub{ color:var(--muted); font-size:clamp(13px,1.5vw,18px); margin-top:.4em; }
+
   /* ---- 結尾 ---- */
   .end-brand{ font-weight:900; font-size:clamp(30px,5vw,64px); margin-top:3vh; }
   .end-contact{ color:var(--muted); font-size:clamp(16px,2vw,26px); margin-top:2vh; }
@@ -162,6 +169,13 @@
       <p class="kicker">真實案例 ｜ 西北影像</p>
       <h2 class="head"><span class="nw">報價，從「層層關卡」</span><br><span class="nw">到 <span class="em">「秒回」</span></span></h2>
       <p class="lead">申請紡拓會補助<br>→ 打造 LINE 報價機器人</p>
+      <div class="qr">
+        <img src="images/line-qr-cip.png" alt="西北影像 LINE 報價機器人 QR Code">
+        <div class="qr-text">
+          <div class="qr-title">現在就掃描，立即體驗</div>
+          <div class="qr-sub">用 LINE 直接向機器人詢價</div>
+        </div>
+      </div>
     </div>
     <div class="col-media">
       <div class="phone"><img src="images/line-bot-cip.png" alt="西北影像 LINE 報價機器人對話"></div>
